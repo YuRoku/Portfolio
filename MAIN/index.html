@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- font awesome CSS -->
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+	<title>YuRoku Portfolio!</title>
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Noto+Sans+KR&family=Varela+Round&display=swap" rel="stylesheet">
+		
+	<!-- Custom styles CSS -->
+<link rel="stylesheet" href="css/style.css">
+	
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar">
+
+<!------------------------------------------------
+	* 1. トップビジュアル
+-------------------------------------------------->
+		<section id="top">
+			<div class="top-item">
+				<img src="images/logo.png" alt="">
+				<p class="top-item__main typ">Hello,YuRoku Portfolio.</p>
+				<p class="top-item__sub typ">ねだるな、勝ち取れ。<br>さすれば与えられん。</p>
+			</div>
+			<!-- 動くマウスの記述 -->
+			<div class="mouse-icon">
+				<div class="wheel"></div>
+			</div>
+		</section>
+
+<!------------------------------------------------
+	* 2. ナビバー
+-------------------------------------------------->
+
+	<header class="sticky-top">
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light"">
+			<div class="container">
+			 <h1>
+				<a class="navbar-brand" href="#">YuRoku</a>
+			 </h1>
+			 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+				<span class="navbar-toggler-icon"></span>
+			 </button>
+			 <div class="collapse navbar-collapse" id="Navbar">
+				<ul class="nav nav-pills flex-column flex-lg-row ml-auto">
+			 <li class="nav-item"><a class="nav-link" href="#top">home</a></li>
+			 <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+			 <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+			 <li class="nav-item"><a class="nav-link" href="#service">service</a></li>
+			 <li class="nav-item"><a class="nav-link" href="#price">price</a></li>
+			 <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+				</ul>
+			 </div>
+			</div>
+		 </nav>
+		<!-- ↑↑↑この中にBootstrapのナビをコピペ ↑↑↑-->
+		
+	</header>
+
+	<main>
+
+<!------------------------------------------------
+	* 3. Message
+-------------------------------------------------->
+		<section id="message" class="module effect-fade" >
+			<div class="container">
+
+				<div class="module__header">
+					<h2 class="module__title">
+						Message
+						<span>Message</span>
+					</h2>
+					<div class="module__line"></div>
+				</div>
+			</div><!-- .container -->
+
+			<p class="text-center">
+				はじめまして。末益祐吾と申します。
+				<br>フロントエンドエンジニアを目指して勉強中です。
+			</p>
+			<p class="text-center mt-4">
+				2019年に視覚障害が発覚。
+			</p>
+			<p class="text-center mt-4">
+				2020年4月に車の免許更新が
+				<br>できなかったことをきっかけに
+				<br>将来的に自宅で仕事をできるようにと
+				<br>プログラミング学習を開始。
+			</p>
+			<p class="text-center mt-4">
+				悪戦苦闘しながらも日々成長を
+				<br>実感できる毎日に充実を感じています。
+			</p>
+			<p class="text-center mt-4">
+				コミュニケーションを大事にして
+				<br>お客様と理想のホームページを
+				<br>一緒に作り上げていきます。
+			</p>
+		</section>
+		
+
+<!------------------------------------------------
+	* 4. About
+-------------------------------------------------->
+		<section id="about" class="module effect-fade" style="margin-top: -80px;">
+
+			<div class="container">
+				<div class="row">
+
+					<!-- 写真 -->
+					<div class="about-box__img col-lg-4">
+					</div>
+
+					<!-- テキスト -->
+					<div class="about-box__text col-lg-8">
+						<div class="module__header">
+							<h2 class="module__title">
+								About me
+								<span>About me</span>
+								</h2>
+							<div class="module__line"></div>
+						</div>
+
+					<!-- 自己紹介 -->
+						<div class="about-item">
+							<div class="about-item__icon">
+								<i class="fas fa-user-circle"></i>
+							</div>
+							<div class="about-item__box">
+								<h3 class="about-item__title">末益祐吾</h3>
+								<p class="about-item__desc">山口県出身。<br>趣味は、サッカー観戦・フットサル・アニメ・ゲーム。</p>
+							</div>
+						</div>
+
+					<!-- ステータス -->
+						<div class="about-item">
+							<div class="about-item__icon">
+								<i class="fas fa-paint-brush"></i>
+							</div>
+							<div class="about-item__box">
+								<h3 class="about-item__title">Status</h3>
+								<ul class="about-item__desc list-unstyled pl-0">
+									<li><i class="fas fa-check-square mr-2"></i>Web制作を独学で学習中。</li>
+									<li><i class="fas fa-check-square mr-2"></i>動画制作も可能。</li>
+									<li><i class="fas fa-check-square mr-2"></i>新しいもの好き。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+<!------------------------------------------------
+	* 5. Works（portfolio）
+-------------------------------------------------->
+		<section id="portfolio" class="module">
+			<div class="container">
+
+				<div class="module__header effect-fade">
+					<h2 class="module__title">
+						My works
+						<span>Works</span>
+						</h2>
+					<div class="module__line"></div>
+				</div>
+
+				<div class="row justify-content-center effect-fade">
+					<div class="col-lg-4 mt-5">
+						<a href="">
+							<div class="works-item">
+								<img src="images/works_01.jpg" alt="">
+								<div class="works-item__overlay">
+									<div class="works-item__inner">
+										<h3 class="works-item__title">ただいま製作中...</h3>
+										<p class="works-item__desc">お楽しみに!!</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 mt-5">
+						<a href="">
+							<div class="works-item">
+								<img src="images/works_01.jpg" alt="">
+								<div class="works-item__overlay">
+									<div class="works-item__inner">
+										<h3 class="works-item__title">ただいま製作中...</h3>
+										<p class="works-item__desc">お楽しみに!!</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 mt-5">
+						<a href="">
+							<div class="works-item">
+								<img src="images/works_01.jpg" alt="">
+								<div class="works-item__overlay">
+									<div class="works-item__inner">
+										<h3 class="works-item__title">ただいま製作中...</h3>
+										<p class="works-item__desc">お楽しみに!!</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+							
+				<div class="row justify-content-center effect-fade">
+
+					<div class="col-lg-4 mt-5">
+						<a href="">
+							<div class="works-item">
+								<img src="images/works_01.jpg" alt="">
+								<div class="works-item__overlay">
+									<div class="works-item__inner">
+										<h3 class="works-item__title">ただいま製作中...</h3>
+										<p class="works-item__desc">お楽しみに!!</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 mt-5">
+						<a href="">
+							<div class="works-item">
+								<img src="images/works_01.jpg" alt="">
+								<div class="works-item__overlay">
+									<div class="works-item__inner">
+										<h3 class="works-item__title">ただいま製作中...</h3>
+										<p class="works-item__desc">お楽しみに!!</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+<!------------------------------------------------
+	* 6. Service
+-------------------------------------------------->
+  <section id="service" class="module">
+		<div class="container">
+
+			<div class="module__header effect-fade">
+				<h2 class="module__title">
+				  My service
+					<span>Service</span>
+				</h2>
+				<div class="module__line"></div>
+			</div>
+
+			<div class="row effect-fade">
+
+				<div class="col-md-4">
+					<div class="service-card">
+						<div class="service-card__icon">
+							<i class="fas fa-code"></i>
+						</div>
+							<h3 class="service-card__title">HTML&CSS</h3>
+						<p class="service-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="service-card">
+						<div class="service-card__icon">
+							<i class="fas fa-code"></i>
+						</div>
+							<h3 class="service-card__title">HTML&CSS</h3>
+						<p class="service-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="service-card">
+						<div class="service-card__icon">
+							<i class="fas fa-code"></i>
+						</div>
+							<h3 class="service-card__title">HTML&CSS</h3>
+						<p class="service-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+<!------------------------------------------------
+	* 8. Contact
+-------------------------------------------------->
+	<section id="contact" class="module">
+		<div class="container">
+
+			<div class="module__header effect-fade">
+				<h2 class="module__title">
+					Contact
+					<span>Contact</span>
+					</h2>
+				<div class="module__line"></div>
+				<p>お仕事のご相談、ご依頼などお気軽にご連絡ください。</p>
+			</div>
+
+			<form id="contact-form" action="mail.php" method="post" class="effect-fade">
+				<div class="form-group">
+					<label class="sr-only" for="name">Name</label>
+					<input type="text" id="name" class="form-control" name="name"" placeholder="Name"" required>
+				</div>
+				<div class="form-group">
+					<label class="sr-only" for="email">Email address</label>
+					<input type="email" id="email" class="form-control" name="mail" placeholder="E-mail" required>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" id="c_message" name="content" rows="7" placeholder="Message" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-block btn-custom-2">Send Message</button>
+			</form>
+
+		</div>
+	</section>
+
+
+
+	</main>
+
+
+<!------------------------------------------------
+	* 9. Footer
+-------------------------------------------------->
+	<footer>
+		<div class="container">
+			<small lang="en">© 2020 YuRoku.</small>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<!-- function.js -->
+	<script src="js/funcition.js"></script>
+	
+</body>
+
+</html>
