@@ -4,6 +4,7 @@
 /* ---------------------------------------------- */
 html{
   font-size: .9rem;
+  scroll-behavior: smooth;
 }
 body{
   line-height: 2;
@@ -50,7 +51,7 @@ h3{
 /* ---------------------------------------------- /*
 *   スクロールフェード
 /* ---------------------------------------------- */
-.effect-fade {
+/* .effect-fade {
   opacity : 0;
   transform : translate(0, 5rem);
   transition : all 2000ms;
@@ -59,7 +60,7 @@ h3{
 .effect-fade.effect-scroll {
   opacity : 1;
   transform : translate(0, 0);
-}
+} */
 
 /* ---------------------------------------------- /*
 *   見出しの設定
@@ -97,12 +98,17 @@ h3{
 #top {
   position        : relative;
   height          : 100vh;
-  background-image : url(/images/top_bg.jpg);
   background-size: cover;
   background-position: center;
   display        : flex;
   justify-content: center;
   align-items    : center;
+}
+
+#youtube-wrap {
+  background-image : url(/images/top_bg.jpg);
+  width: 100%;
+  height: 100vh;
 }
 
 /* 背景に黒いフィルターをかける */
@@ -226,61 +232,55 @@ h3{
 /* ---------------------------------------------- /*
 	* 2. ナビバー
 /* ---------------------------------------------- */
-/* メモ：bootstrapだけで実装 */
 .nav-item a{
   color: #636363;
   font-family: 'Varela Round',sans-serif;
 }
 
-
 /* ---------------------------------------------- /*
   * 3. Message
 /* ---------------------------------------------- */
-  /* CSSの記述なし */
-  /* module__headerの記述は50行目付近 */
 
 /* ---------------------------------------------- /*
 *  4. About
 /* ---------------------------------------------- */
 
-/* 左側のプロフィール画像を設定 */
-.about-box__img{
-  background-image: url(/images/prof.jpg);
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
+/* 左側のプロフィール画像 */
+.about-box__img img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 
 /* 右側のプロフィール */
 .about-box__text{
-  padding: 60px 60px 0 60px;
+  padding: 60px 50px 0 50px;
   background-color: #383838;
   color: #fff;
+  top: 200px;
+  margin-bottom: 200px;
 }
 
-/* プロフィールのボックス */
 .about-item {
   display: flex;
   margin-bottom: 50px;
 }
 
-/* プロフィールのアイコンを出す */
 .about-item__icon {
   font-size: 32px;
   display: flex;
 }
 
-/* アイコンの幅分、左側に55pxのpadding */
 .about-item__box {
   padding-left: 10px;
 }
 
-/* タイトル下の余白15px */
 .about-item__title {
   margin-bottom: 15px;
 }
 
-/* プロフィール文章 */
 p.about-item__desc {
   line-height: 1.5;
   color: #fff;
@@ -313,7 +313,6 @@ p.about-item__desc {
   padding: 0 30px;
   opacity: 0;
   transition: all 0.8s;
-
 }
 
 .works-item__overlay::after {
@@ -346,8 +345,22 @@ p.about-item__desc {
 *  6. Service
 /* ---------------------------------------------- */
 #service {
-  background-image: url(/images/service_bg.jpg);
+  background-image: url(/images/IMG_0671.jpg);
   background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 10%;
+  position: relative;
+}
+
+#service::before {
+  content            : "";
+  position           : absolute;
+  left               : 0;
+  right              : 0;
+  top                : 0;
+  bottom             : 0;
+  background-color   : #000000;
+  opacity            : 0.5;
 }
 
 #service .module__title {

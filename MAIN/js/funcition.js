@@ -18,21 +18,21 @@ $(function() {
   });
 
   /* ---------------------------------------------- /*
+*   動画背景
+/* ---------------------------------------------- */
+
+  $('#youtube').YTPlayer();
+
+  /* ---------------------------------------------- /*
 *   スクロールフェード
 /* ---------------------------------------------- */
-  $(window).on('scroll', function () {
 
-    $('.effect-fade').each(function() {
-      const scroll = $(window).scrollTop();
-      const windowHeight = $(window).height();
-      const elemPos = $(this).offset().top;
-        if (scroll > elemPos - windowHeight + 100) {
-            $(this).addClass('effect-scroll');
-        }
-    });
-  });
+    new WOW().init();
 
 
 
 
+
+
+    
 });
