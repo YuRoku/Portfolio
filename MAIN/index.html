@@ -27,14 +27,14 @@
 <body data-spy="scroll" data-target="#Navbar">
 
 <!------------------------------------------------
-	* 1. トップビジュアル
+	* トップビジュアル
 -------------------------------------------------->
 		<div id="youtube-wrap">
 			<section id="top">
 				<div class="top-item">
-					<img src="images/logo.png" alt="">
-					<p class="top-item__main typ">Hello,YuRoku Portfolio.</p>
-					<p class="top-item__sub typ">ねだるな、勝ち取れ。<br>さすれば与えられん。</p>
+					<img src="images/YuRokuロゴ’(白).png" alt="">
+					<p class="top-item__main typ">Welcome<br>YuRoku's Portfolio.</p>
+					<p class="top-item__sub typ">ポートフォリオサイトへようこそ!!</p>
 				</div>
 				<!-- 動くマウスの記述 -->
 				<div class="mouse-icon">
@@ -44,9 +44,8 @@
 
 			<div id="youtube" data-property="{
 				videoURL: 'https://youtu.be/shAYCwvObD4',
-				containment: '#youtube-wrap',
+				containment: '#top',
 				autoPlay: true,
-				<!-- optimizeDisplay: false, -->
 				stopMovieOnBlur: false,
 				loop: 1,
 				mute: true,
@@ -62,7 +61,7 @@
 		</div>
 
 <!------------------------------------------------
-	* 2. ナビバー
+	* ナビバー
 -------------------------------------------------->
 
 	<header class="sticky-top">
@@ -80,7 +79,7 @@
 			 <li class="nav-item message"><a class="nav-link message" href="#message">message</a></li>
 			 <li class="nav-item about"><a class="nav-link" href="#about">about</a></li>
 			 <li class="nav-item works"><a class="nav-link" href="#works">works</a></li>
-			 <li class="nav-item service"><a class="nav-link" href="#service">service</a></li>
+			 <li class="nav-item skills"><a class="nav-link" href="#skills">skills</a></li>
 			 <li class="nav-item contact"><a class="nav-link" href="#contact">contact</a></li>
 				</ul>
 			 </div>
@@ -92,9 +91,9 @@
 	<main>
 
 <!------------------------------------------------
-	* 3. Message
+	* Message
 -------------------------------------------------->
-		<section id="message" class="module wow fadeInUp" >
+		<section id="message" class="module wow fadeInUp" data-wow-offset="400">
 			<div class="container">
 
 				<div class="module__header">
@@ -107,25 +106,20 @@
 			</div><!-- .container -->
 
 			<p class="text-center">
-				はじめまして。末益祐吾と申します。
-				<br>フロントエンドエンジニアを目指して勉強中です。
+				ポートフォリオサイトを<span class="br"></span>ご覧いただき
+				<br>ありがとうございます。
 			</p>
 			<p class="text-center mt-4">
-				2019年に視覚障害が発覚。
+				はじめまして。<span class="br"></span>末益祐吾と申します。
+				<br>フロントエンドエンジニアを<span class="br"></span>目指して勉強中です。
 			</p>
 			<p class="text-center mt-4">
-				2020年4月に車の免許更新が
-				<br>できなかったことをきっかけに
-				<br>将来的に自宅で仕事をできるようにと
-				<br>プログラミング学習を開始。
+				悪戦苦闘しながらも<span class="br"></span>日々成長を
+				<br>実感できる毎日に<span class="br"></span>充実を感じています。
 			</p>
 			<p class="text-center mt-4">
-				悪戦苦闘しながらも日々成長を
-				<br>実感できる毎日に充実を感じています。
-			</p>
-			<p class="text-center mt-4">
-				コミュニケーションを大事にして
-				<br>お客様と理想のホームページを
+				コミュニケーションを<span class="br"></span>大事にして
+				<br>お客様と理想の<span class="br"></span>ホームページを
 				<br>一緒に作り上げていきます。
 			</p>
 		</section>
@@ -134,7 +128,7 @@
 <!------------------------------------------------
 	* 4. About
 -------------------------------------------------->
-		<section id="about" class="module wow fadeInUp" style="margin-top: -80px;">
+		<section id="about" class="module wow fadeInUp" data-wow-offset="400" style="margin-top: -80px;">
 
 			<div class="container">
 				<div class="row">
@@ -193,7 +187,7 @@
 		<section id="works" class="module">
 			<div class="container">
 
-				<div class="module__header wow fadeInUp">
+				<div class="module__header wow fadeInUp" data-wow-offset="300">
 					<h2 class="module__title">
 						My works
 						<span>Works</span>
@@ -201,7 +195,7 @@
 					<div class="module__line"></div>
 				</div>
 
-				<div class="row justify-content-center wow fadeInUp">
+				<div class="row justify-content-center wow fadeInUp" data-wow-offset="300" >
 					<div class="col-lg-4 mt-5">
 						<a href="">
 							<div class="works-item">
@@ -249,68 +243,68 @@
 
 
 <!------------------------------------------------
-	* 6. Service
+	  Skills
 -------------------------------------------------->
-  <section id="service" class="module">
+  <section id="skills" class="module">
 		<div class="container">
 
-			<div class="module__header wow fadeInUp">
+			<div class="module__header wow fadeInUp" data-wow-offset="300">
 				<h2 class="module__title">
-				  My service
-					<span>Service</span>
+				  Skills
+					<span>Skills</span>
 				</h2>
 				<div class="module__line"></div>
 			</div>
 
-			<div class="row wow fadeInUp">
+			<div class="row wow fadeInUp" data-wow-offset="300">
 
 				<div class="col-lg-4 col-md-6 mb-5">
-					<div class="service-card">
-						<div class="service-card__icon">
-							<i class="fas fa-code"></i>
+					<div class="skills-card">
+						<div class="skills-card__icon">
+							<i class="fas fa-file-code"></i>
 						</div>
-							<h3 class="service-card__title">HTML&CSS</h3>
-						<p class="service-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
+							<h3 class="skills-card__title">HTML&CSS</h3>
+						<p class="skills-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
 					</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6 mb-5">
-					<div class="service-card">
-						<div class="service-card__icon">
-							<i class="fas fa-code"></i>
+					<div class="skills-card">
+						<div class="skills-card__icon">
+							<i class="fab fa-js-square"></i>
 						</div>
-							<h3 class="service-card__title">HTML&CSS</h3>
-						<p class="service-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
+							<h3 class="skills-card__title">jQuery</h3>
+						<p class="skills-card__desc">JavaScriptライブラリのjQueryを使用して、Webサイトに動きをつけることができます。</p>
 					</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6 mb-5">
-					<div class="service-card">
-						<div class="service-card__icon">
-							<i class="fas fa-code"></i>
+					<div class="skills-card">
+						<div class="skills-card__icon">
+							<i class="fab fa-bootstrap"></i>
 						</div>
-							<h3 class="service-card__title">HTML&CSS</h3>
-						<p class="service-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
+							<h3 class="skills-card__title">Bootstrap</h3>
+						<p class="skills-card__desc">Bootstrapの基本的な仕組みを理解し、効率よくWebサイトを制作いたします。</p>
 					</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6 mb-5">
-					<div class="service-card">
-						<div class="service-card__icon">
-							<i class="fas fa-code"></i>
+					<div class="skills-card">
+						<div class="skills-card__icon">
+							<i class="fas fa-image"></i>
 						</div>
-							<h3 class="service-card__title">HTML&CSS</h3>
-						<p class="service-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
+							<h3 class="skills-card__title">Photoshop</h3>
+						<p class="skills-card__desc">写真の加工や調整を行い、様々な表現をすることが可能です。</p>
 					</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6 mb-5">
-					<div class="service-card">
-						<div class="service-card__icon">
-							<i class="fas fa-code"></i>
+					<div class="skills-card">
+						<div class="skills-card__icon">
+							<i class="fas fa-video"></i>
 						</div>
-							<h3 class="service-card__title">HTML&CSS</h3>
-						<p class="service-card__desc">HTML5とCSS3を使用してWebサイトの制作や、コーディングすることが可能です。</p>
+							<h3 class="skills-card__title">Premiere Pro</h3>
+						<p class="skills-card__desc">Youtubeなどに向けた、映像のカット・テロップ入れ・BGN挿入などの動画編集も可能です。</p>
 					</div>
 				</div>
 
@@ -319,12 +313,12 @@
 
 
 <!------------------------------------------------
-	* 8. Contact
+	* Contact
 -------------------------------------------------->
 	<section id="contact" class="module">
 		<div class="container">
 
-			<div class="module__header wow fadeInUp">
+			<div class="module__header wow fadeInUp" data-wow-offset="300">
 				<h2 class="module__title">
 					Contact
 					<span>Contact</span>
@@ -333,7 +327,7 @@
 				<p>お仕事のご相談、ご依頼などお気軽にご連絡ください。</p>
 			</div>
 
-			<form id="contact-form" action="mail.php" method="post" class="wow fadeInUp">
+			<form id="contact-form" action="mail.php" method="post" class="wow fadeInUp" data-wow-offset="300">
 				<div class="form-group">
 					<label class="sr-only" for="name">Name</label>
 					<input type="text" id="name" class="form-control" name="name"" placeholder="Name"" required>

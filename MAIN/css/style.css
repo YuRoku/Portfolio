@@ -85,6 +85,7 @@ h3{
   right      : 0px;
   opacity: 0.3;
 }
+
 .module__line {
   background: #666;
   width     : 55px;
@@ -92,21 +93,28 @@ h3{
   margin    : 30px auto;
 }
 
+@media screen and (max-width: 768px) {
+  .module__title span {
+    font-size  : 80px;
+    top        : -30px;
+  }
+}
+
 /* ---------------------------------------------- /*
-*   1. トップビジュアル
+*  トップビジュアル
 /* ---------------------------------------------- */
 #top {
-  position        : relative;
+  width: 100%;
   height          : 100vh;
-  background-size: cover;
-  background-position: center;
   display        : flex;
   justify-content: center;
   align-items    : center;
 }
 
 #youtube-wrap {
-  background-image : url(/images/top_bg.jpg);
+  background-image : url(../images/IMG_0951.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100vh;
 }
@@ -165,7 +173,7 @@ h3{
 .mouse-icon {
   position     : absolute;
   left         : 50%;
-  bottom       : 60px;
+  bottom       : 20px;
   border       : 2px solid #fff;
   border-radius: 16px;
   height       : 50px;
@@ -230,7 +238,7 @@ h3{
 /* マウスの動くアイコン ここまで*/
 
 /* ---------------------------------------------- /*
-	* 2. ナビバー
+	* ナビバー
 /* ---------------------------------------------- */
 .nav-item a{
   color: #636363;
@@ -238,11 +246,16 @@ h3{
 }
 
 /* ---------------------------------------------- /*
-  * 3. Message
+  * Message
 /* ---------------------------------------------- */
-
+@media screen and (max-width: 375px) {
+  .br::before {
+    content: "\A" ;
+    white-space: pre ;
+  }
+}
 /* ---------------------------------------------- /*
-*  4. About
+*  About
 /* ---------------------------------------------- */
 
 /* 左側のプロフィール画像 */
@@ -287,8 +300,30 @@ p.about-item__desc {
 }
 
 
+@media screen and (max-width: 991px) {
+  #about {
+    padding: 0;
+  }
+
+  .about-box__img {
+    text-align: center;
+    order: 1;
+    padding-top: 80px;
+  }
+
+.about-box__img img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+}
+
+
 /* ---------------------------------------------- /*
-*  5. Works（portfolio）
+*  Works
 /* ---------------------------------------------- */
 #portfolio {
   padding-bottom: 100px;
@@ -342,17 +377,17 @@ p.about-item__desc {
 }
 
 /* ---------------------------------------------- /*
-*  6. Service
+*  Skills
 /* ---------------------------------------------- */
-#service {
-  background-image: url(/images/IMG_0671.jpg);
+#skills {
+  background-image: url(../images/IMG_0671.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 10%;
   position: relative;
 }
 
-#service::before {
+#skills::before {
   content            : "";
   position           : absolute;
   left               : 0;
@@ -363,11 +398,11 @@ p.about-item__desc {
   opacity            : 0.5;
 }
 
-#service .module__title {
+#skills .module__title {
   color: #fff;
 }
 
-.service-card {
+.skills-card {
   background-color: #fff;
   width: 100%;
   height: 100%;
@@ -375,12 +410,13 @@ p.about-item__desc {
   box-shadow: -6px 10px 30px rgba(0, 0, 0, 0.06);
 }
 
-.service-card__icon {
-  color : #00cfd6;
-  font-size: 30px;
+.skills-card__icon {
+  color : #00aaff;
+  font-size: 56px;
+  text-align: center;
 }
 
-.service-card__title {
+.skills-card__title {
   margin: 10px 0 20px;
   font-size : 1.1rem;
   letter-spacing : 3px;
@@ -392,21 +428,15 @@ p.about-item__desc {
   /* animation : Transition 10s linear infinite; */
 }
 
-.service-card__desc {
+.skills-card__desc {
   font-family: fot-tsukuardgothic-std,sans-serif;
   font-size: 0.9rem;
   color: #5B5963;
 }
 
-/* ---------------------------------------------- /*
-*  7. Price
-/* ---------------------------------------------- */
-
-
-
 
 /* ---------------------------------------------- /*
-*  8. Contact
+*  Contact
 /* ---------------------------------------------- */
 
 #contact{
@@ -414,13 +444,17 @@ p.about-item__desc {
   margin: 0 auto;
 }
 .btn-custom-2 {
-  background   : rgba(253, 180, 90, 1);
+  background   : rgb(255, 140, 0);
   border-radius: 3px;
   color        : #fff;
 }
 
+.form-control {
+  border: 2px solid #868686;
+}
+
 /* ---------------------------------------------- /*
-*  9. Footer
+*  Footer
 /* ---------------------------------------------- */
 footer {
   background-color: #333;
